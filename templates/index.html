@@ -1,19 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body style="background-image: url(https://rare-gallery.com/uploads/posts/522743-sony-abstract.jpg);">
+    <h1 class="ui center aligned header" style="margin-top: 50px; color: rgb(4, 249, 204);font-family: 'Space Grotesk', sans-serif;font-weight:bolder;");>Welcome to the Calculator</h1>
+    <form class="ui form"  method="post" action="/" style=" align-content: center;">
+        <label for="num1" style="color:rgb(4, 249, 204);font-family: 'Space Grotesk', sans-serif;font-weight:bolder;">Number 1:</label><br>
+        <input type="number" id="num1" name="num1" placeholder="Please Enter your First Number" style="color:black;font-family: 'Space Grotesk', sans-serif;font-weight:bolder;"><br><br>
+        <label for="num2"  style="color:rgb(4, 249, 204);font-family: 'Space Grotesk', sans-serif;font-weight:bolder;">Number 2:</label><br>
+        <input type="number" id="num2" name="num2" placeholder="Please Enter your Second Number" style="color:black;font-family: 'Space Grotesk', sans-serif;font-weight:bolder;"><br><br><br>
+        <label for="operation" style="color:rgb(4, 249, 204);font-family: 'Space Grotesk', sans-serif;font-weight:bolder;">Select operation:</label><br>
+        <select id="operation" name="operation" style="color:crimson;font-family: 'Space Grotesk', sans-serif;font-weight:bolder;">
+            <option value="add" >Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select><br><br>
+        <input type="submit" class="ui blue button" value="Calculate" style="font-family: 'Space Grotesk', sans-serif;font-weight:bolder; color: yellow;">
+    </form>
 </body>
-
 </html>
